@@ -8,7 +8,7 @@ export const Navbar = () => {
       <nav class=" p-3 dark:bg-gray-900 dark:border-gray-700">
       <div class=" container flex flex-wrap items-center justify-between mx-auto">
         <Link href="/">
-        <a href="/" class="flex items-center font-burtons text-xl text-black">alexanderturco</a>
+        <a class="flex items-center font-burtons text-xl text-black">alexanderturco</a>
         </Link>
         <div class="hidden w-full md:block md:w-auto">
           <ul class=" flex flex-col px-10 mt-4 border border-gray-100 rounded-lg bg-white md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
