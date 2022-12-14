@@ -5,16 +5,11 @@ import Head from "next/head";
 
 export const Navbar = () => {
     return (
-      <nav class=" p-3 dark:bg-gray-900 dark:border-gray-700">
-      <div class=" container flex flex-wrap items-center justify-between mx-auto">
-        <Link href="/">
-        <a class="flex items-center font-burtons text-xl text-black">alexanderturco</a>
-        </Link>
-        <div class="hidden w-full md:block md:w-auto">
-          <ul class=" flex flex-col px-10 mt-4 border border-gray-100 rounded-lg bg-white md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+      <nav class=" p-3 s:pr-10 dark:bg-gray-900 dark:border-gray-700">
+          <ul class=" flex px-10 mt-4 border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             <li>
               <Link href="/">
-              <a class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-white dark:bg-blue-600 md:dark:bg-transparent" aria-current="page">Home</a>
+              <a class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-white dark:bg-blue-600 md:dark:bg-transparent">Home</a>
               </Link>
             </li>
             <li>
@@ -28,8 +23,6 @@ export const Navbar = () => {
               </Link>
             </li>
           </ul>
-        </div>
-      </div>
     </nav>
     );
 }
