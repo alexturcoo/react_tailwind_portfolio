@@ -31,7 +31,7 @@ import latex from "../public/latex.png"
 
 export default function Home() {
   return (
-    <div className=" bg-gray-800">
+    <div className=" bg-gray-800 p-96">
       <main className=" px-10  md:px-20 lg:px-40">
           <div className="text-center p-10 py-10">
             <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl">
