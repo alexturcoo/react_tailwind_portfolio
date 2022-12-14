@@ -33,7 +33,7 @@ export default function Home() {
   return (
     <div className=" flex text-center">
       <main className=" bg-gray-800 px-10  md:px-20 lg:px-40">
-            <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl">
+            <h2 className="text-5xl py-10 text-teal-600 font-medium md:text-6xl">
               Alexander Turco
             </h2>
             <h3 className="text-2xl py-2 text-white md:text-3xl">
@@ -54,11 +54,12 @@ export default function Home() {
             <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-10 mb-10 md:h-96 md:w-96">
               <Image src={DNA} layout="fill" objectFit="contain" />
             </div>
+            <hr className="my-4 mx-auto w-48 h-1 bg-gray-100 rounded border-0 md:my-10 dark:bg-gray-700" />
 
           <section>
             <div className=" py-2 rounded-xl bg-gray-600">
             <h3 className="text-3xl py-5 text-teal-600 ">About me</h3>
-            <p className="text-md py-2 leading-8 text-white">
+            <p className="text-md p-3 leading-8 text-white">
               Hello World, my name is Alexander Turco, thanks for checking out my
               website! I wrote this website using react and tailwindcss as a means of
               bettering my Javascript skills while also finding a cool way to share 
@@ -71,6 +72,7 @@ export default function Home() {
               and am able to combine my love of biology with my love of programming.  
             </p>
             </div>
+            <hr className="my-4 mx-auto w-48 h-1 bg-gray-100 rounded border-0 md:my-10 dark:bg-gray-700" />
           </section>
 
         <section>
