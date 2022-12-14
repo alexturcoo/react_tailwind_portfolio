@@ -28,11 +28,11 @@ export const Navbar = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/about">
+                  <Link href="/projects">
                   <a
                     className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
                   >
-                    About
+                    Projects
                   </a>
                   </Link>
                 </li>
