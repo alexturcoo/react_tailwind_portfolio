@@ -23,7 +23,7 @@ import thesisb from "../public/thesisb.png"
 
 export default function Projects(){
     return(
-        <div  className=" bg-gray-800 min-h-screen">
+        <div  className=" bg-gray-800 h-screen">
         <section className="p-10">
           <div>
             <h3 className="text-3xl py-1 text-white ">Portfolio</h3>
