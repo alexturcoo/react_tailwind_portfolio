@@ -31,9 +31,8 @@ import latex from "../public/latex.png"
 
 export default function Home() {
   return (
-    <div className=" bg-gray-800 p-96">
-      <main className=" px-10  md:px-20 lg:px-40">
-          <div className="text-center p-10 py-10">
+    <div className=" flex text-center">
+      <main className=" bg-gray-800 px-10  md:px-20 lg:px-40">
             <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl">
               Alexander Turco
             </h2>
@@ -52,14 +51,13 @@ export default function Home() {
               <AiFillGithub />
               </a>
             </div>
-            <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
+            <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-10 mb-10 md:h-96 md:w-96">
               <Image src={DNA} layout="fill" objectFit="contain" />
             </div>
-          </div>
 
           <section>
-            <div className=" p-2 shadow-lg rounded-xl bg-gray-600">
-            <h3 className="text-3xl py-3 text-teal-600 ">About me</h3>
+            <div className=" py-2 rounded-xl bg-gray-600">
+            <h3 className="text-3xl py-5 text-teal-600 ">About me</h3>
             <p className="text-md py-2 leading-8 text-white">
               Hello World, my name is Alexander Turco, thanks for checking out my
               website! I wrote this website using react and tailwindcss as a means of
@@ -85,7 +83,7 @@ export default function Home() {
               are some languages I have experience in. 
             </p>
           </div>
-          <div className="lg:flex gap-10">
+          <div className="flex gap-10">
             <div className="text-center shadow-lg p-10 rounded-xl my-10 bg-white flex-1">
               <Image src={python} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2  ">
