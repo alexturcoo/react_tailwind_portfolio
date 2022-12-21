@@ -24,8 +24,8 @@ export default function Projects(){
         <div  className=" bg-gray-800">
         <section className="p-10">
           <div>
-            <h3 className="text-5xl py-1 text-teal-600 ">Projects</h3>
-            <p className="text-md py-2 leading-8 text-white ">
+            <h3 className=" font-sans text-5xl py-1 text-teal-600 ">Projects</h3>
+            <p className=" font-mono text-md py-2 leading-8 text-white ">
               Many biological projects I have worked on have a computational
               aspect to them. Feel free to take a look at the cool projects I
               have been fortunate enough to be involved with.
@@ -42,9 +42,9 @@ export default function Projects(){
                 src={poster}
               />
               </Link>
-              <h4 className=" text-center text-xl p-3 text-white italic ">Investing Harmful Algal Blooms in Ontario</h4>
+              <h4 className=" font-sans text-center text-xl p-3 text-white italic ">Investing Harmful Algal Blooms in Ontario</h4>
               <hr className="my-4 mx-auto w-48 h-1 bg-gray-100 rounded border-0 md:my-10 dark:bg-gray-700" />
-              <p className=" bg-gradient-to-r from-cyan-500 text- to-teal-500 text-black p-2 border-none rounded">
+              <p className=" font-sans bg-gradient-to-r from-cyan-500 text- to-teal-500 text-black p-2 border-none rounded">
               As a research assistant at McMaster University, I spent the summer exploring harmful algal bloom sites 
               across Ontario. Under the supervision of Dr. Brian Golding and Dr. Herb Schellhorn, I conducted a 
               metagenomic analysis of bloom and non-bloom sites using samples provided by the Ministry of Environment 
@@ -66,9 +66,9 @@ export default function Projects(){
                 src={cells}
               />
               </Link>
-              <h4 className=" text-center text-xl p-3 text-white italic">Cells at War: An immersive biological game</h4>
+              <h4 className=" font-sans text-center text-xl p-3 text-white italic">Cells at War: An immersive biological game</h4>
               <hr className="my-4 mx-auto w-48 h-1 bg-gray-100 rounded border-0 md:my-10 dark:bg-gray-700" />
-              <p className=" bg-gradient-to-r from-cyan-500 text- to-teal-500 text-black p-2 border-none rounded">
+              <p className=" font-sans bg-gradient-to-r from-cyan-500 text- to-teal-500 text-black p-2 border-none rounded">
               I worked with a group of biology undergraduate students in collaboration with a supervising professor 
               towards the development of an innovative and immersive biological video game. The end goal of the 
               project was to pilot and implement the game in some first year science classrooms at McMaster 
@@ -91,9 +91,9 @@ export default function Projects(){
                 src={thesisb}
               />
               </Link>
-              <h4 className=" text-center text-xl p-3 text-white italic">Undergraduate Thesis: Evolution of LCRs</h4>
+              <h4 className=" font-sans text-center text-xl p-3 text-white italic">Undergraduate Thesis: Evolution of LCRs</h4>
               <hr className="my-4 mx-auto w-48 h-1 bg-gray-100 rounded border-0 md:my-10 dark:bg-gray-700" />
-              <p className=" bg-gradient-to-r from-cyan-500 text- to-teal-500 text-black p-2 border-none rounded-md">
+              <p className=" font-sans bg-gradient-to-r from-cyan-500 text- to-teal-500 text-black p-2 border-none rounded-md">
                 As a fourth year undergraduate thesis student, I am working in a bioinformatics lab under the supervision 
                 of Dr. Brian Golding. For my undergraduate thesis, I am exploring how to estimate evolutionary parameters
                 such as mutation rates and indel rates using an analysis/approach called an approximate bayesian computation (ABC).
