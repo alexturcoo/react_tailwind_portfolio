@@ -82,7 +82,7 @@ export default function Projects(){
               </p>
             </div>
             <div className="basis-1/4 flex-1">
-              <Link href="/finalthesis_apr19_alexturco_fixedcomments">
+              <Link href="/finalthesis_apr19_alexturco_fixedcomments.pdf">
               <Image
                 className="rounded-lg object-fill scale-100 hover:scale-110 cursor-pointer"
                 width={"100%"}

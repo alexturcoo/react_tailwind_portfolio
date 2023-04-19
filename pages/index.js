@@ -52,7 +52,7 @@ export default function Home() {
               <AiFillGithub />
               </a>
             </div>
-            <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-10 mb-10 md:h-96 md:w-96">
+            <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-70 h-70 relative overflow-hidden mt-10 mb-10 md:h-86 md:w-86">
               <Image src={headshot} layout="fill" objectFit="contain" />
             </div>
             <hr className="my-4 mx-auto w-48 h-1 bg-gray-100 rounded border-0 md:my-10 dark:bg-gray-700" />
