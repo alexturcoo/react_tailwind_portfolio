@@ -103,14 +103,14 @@ export default function Projects(){
                 how Low Complexity Regions evolve. Check it out on github by pressing the image above.
               </p>
             </div>
-            <div className="basis-1/4 flex-5">
+            <div className="basis-1/4 flex-4">
               <Link href="/3mt_pmcrc_updated.mp4">
               <Image
                 className="rounded-lg object-fill scale-100 hover:scale-110 cursor-pointer"
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
-                src={thesisb}
+                src={pmcrc}
               />
               </Link>
               <h4 className=" font-sans text-center text-xl p-3 text-white italic">Investigating Sex Differences In Genetic Interactions across Human Cancers</h4>
