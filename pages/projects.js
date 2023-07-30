@@ -18,6 +18,7 @@ import poster from "../public/poster.png"
 import cells from "../public/cells.png"
 import thesisb from "../public/thesisb.png"
 import Link from "next/link"
+import pmcrc from "../public/pmcrc.png"
 
 export default function Projects(){
     return(
@@ -102,7 +103,7 @@ export default function Projects(){
                 how Low Complexity Regions evolve. Check it out on github by pressing the image above.
               </p>
             </div>
-            <div className="basis-1/4 flex-1">
+            <div className="basis-1/4 flex-5">
               <Link href="/3mt_pmcrc_updated.mp4">
               <Image
                 className="rounded-lg object-fill scale-100 hover:scale-110 cursor-pointer"
