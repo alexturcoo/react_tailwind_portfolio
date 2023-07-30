@@ -103,7 +103,7 @@ export default function Projects(){
                 how Low Complexity Regions evolve. Check it out on github by pressing the image above.
               </p>
             </div>
-            <div className="basis-1/4 flex-4">
+            <div className="basis-1/4 flex-2">
               <Link href="/3mt_pmcrc_updated.mp4">
               <Image
                 className="rounded-lg object-fill scale-100 hover:scale-110 cursor-pointer"
