@@ -33,7 +33,7 @@ export default function Projects(){
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/4 flex-1">
+            <div className="basis-1 flex-1">
               <Link href="/poster.png">
               <Image
                 className="rounded-lg object-cover hover:scale-110 cursor-pointer"
@@ -57,7 +57,7 @@ export default function Projects(){
               those who work in industry could view and inquire about the poster and the work being done.
               </p>
             </div>
-            <div className="basis-1/4 flex-1">
+            <div className="basis-1 flex-1">
               <Link href="http://www.cellsatwar.com/demo/">
               <Image
                 className="rounded-lg object-cover scale-100 hover:scale-110 cursor-pointer"
@@ -82,7 +82,7 @@ export default function Projects(){
               or examining static images.
               </p>
             </div>
-            <div className="basis-1/4 flex-1">
+            <div className="basis-1 flex-1">
               <Link href="/finalthesis_apr19_alexturco_fixedcomments.pdf">
               <Image
                 className="rounded-lg object-fill scale-100 hover:scale-110 cursor-pointer"
@@ -103,7 +103,7 @@ export default function Projects(){
                 how Low Complexity Regions evolve. Check it out on github by pressing the image above.
               </p>
             </div>
-            <div className="basis-1/4 flex-2">
+            <div className="basis-1, flex-1">
               <Link href="/3mt_pmcrc_updated.mp4">
               <Image
                 className="rounded-lg object-fill scale-100 hover:scale-110 cursor-pointer"
