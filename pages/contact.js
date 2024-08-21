@@ -11,7 +11,7 @@ export default function Contact(){
                 <label className=" font-mono bg-gradient-to-r from-cyan-500 text- to-teal-500 text-black p-2 border-none rounded ">School Email: turcoa1@mcmaster.ca</label>
                 </ul>
                 <ul className="py-5 text-center">
-                <label className=" font-mono bg-gradient-to-r from-cyan-500 text- to-teal-500 text-black p-2 border-none rounded ">Personal Email: alexaderturco1@gmail.com</label>
+                <label className=" font-mono bg-gradient-to-r from-cyan-500 text- to-teal-500 text-black p-2 border-none rounded ">Personal Email: alexanderturco1@gmail.com</label>
                 </ul>
                 <ul className="py-5 text-center">
                 <label className="font-mono bg-gradient-to-r from-cyan-500 text- to-teal-500 text-black p-2 border-none rounded ">Phone Number: (647)-389-0798</label>
