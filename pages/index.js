@@ -42,7 +42,7 @@ export default function Home() {
             </h3>
             <p className=" font-sans text-md py-5 leading-8 text-white dark:text-gray-200 max-w-xl mx-auto md:text-xl">
               Graduate research student passionate about
-              A's T's C's and G's!
+              As Ts Cs and Gs!
             </p>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
               <a href="https://www.linkedin.com/in/alexander-turco-400369163/">
@@ -68,7 +68,7 @@ export default function Home() {
               currently an graduate student at the University of Toronto pursuing a Masters degree in
               Medical Biophysics. Prior to university, the thought of programming had never crossed my mind
               as I believed my interests in biology would keep me far away from any code. I started
-              to realize how wrong I was... I was introduced to an area of study called bioinformatics
+              to realize how wrong I was. I was introduced to an area of study called bioinformatics
               which utilizes computational methods to analyze biological data. I now have the best of both worlds
               and am able to combine my love of biology with my love of programming to better understand the genome.  
             </p>
