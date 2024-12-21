@@ -65,11 +65,10 @@ export default function Home() {
               website! I wrote this website using react and tailwindcss as a means of
               bettering my Javascript skills while also finding a cool way to share 
               some of the projects I have been involved in (because resumes are boring). I am
-              currently an graduate student at the University of Toronto pursuing a Masters degree in
-              Medical Biophysics. Prior to university, the thought of programming had never crossed my mind
-              as I believed my interests in biology would keep me far away from any code. I started
-              to realize how wrong I was. I was introduced to an area of study called bioinformatics
-              which utilizes computational methods to analyze biological data. I now have the best of both worlds
+              currently a graduate student at the University of Toronto pursuing a Masters degree (MSc) in
+              Medical Biophysics. Prior to my undergrad, the thought of programming had never crossed my mind
+              as I believed my interests in biology would keep me far away from any code. I was introduced to bioinformatics
+              and have not looked back. I now have the best of both worlds
               and am able to combine my love of biology with my love of programming to better understand the genome.  
             </p>
             </div>
