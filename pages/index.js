@@ -24,7 +24,7 @@ import python from "../public/python.png"
 import cpp from "../public/cpp.png"
 import rstudio from "../public/rstudio.png"
 import DNA from "../public/DNA.png"
-import headshot from "../public/headshot2.jpg"
+import headshot from "../public/headshot2.JPG"
 import shell from "../public/shell.png"
 import latex from "../public/latex.png"
 
