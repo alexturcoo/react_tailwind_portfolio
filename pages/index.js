@@ -68,8 +68,8 @@ export default function Home() {
               Medical Biophysics. Since my first year of undergrad, I have been obsessed with studying the part
               of the genome that most often gets filtered out of genomics studies. My research has focused on low-complexity regions,
               tandem repeats, non-B DNA motifs, and transposable elements, and how we can better find and utilize these dark regions
-              of the genome to better understand the blueprint of all life. If i'm not programming, you can also find me playing
-              video games (currently Zelda Tears of the Kingdom), playing soccer, snowboarding, solving rubik's cubes, or travelling 
+              of the genome to better understand the blueprint of all life. If im not programming, you can also find me playing
+              video games (currently Zelda Tears of the Kingdom), playing soccer, snowboarding, solving rubiks cubes, or travelling 
               wherever I can go. Please feel free to connect with me about anything! 
             </p>
             </div>
