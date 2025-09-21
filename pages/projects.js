@@ -123,26 +123,6 @@ export default function Projects(){
                 The video above provides a short overview of my research.
               </p>
             </div>
-            <div className="basis-1, flex-1">
-              <Link href="/3mt_pmcrc_updated.mp4">
-              <Image
-                className="rounded-lg object-fill scale-100 hover:scale-110 cursor-pointer"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={pmcrc}
-              />
-              </Link>
-              <h4 className=" font-sans text-center text-xl p-3 text-white italic">Investigating Sex Differences In Genetic Interactions across Human Cancers</h4>
-              <hr className="my-4 mx-auto w-48 h-1 bg-gray-100 rounded border-0 md:my-10 dark:bg-gray-700" />
-              <p className=" font-sans bg-gradient-to-r from-cyan-500 text- to-teal-500 text-black p-2 border-none rounded-md">
-                As a research assistant in the Computational Cancer Genomics lab at Princess Margaret Centre, I worked under the supervision 
-                of Dr. Sushant Kumar. My research project focused on exploring sex differences in synthetic lethal interactions in 12 types of human cancers.
-                I analyzed RNA sequence data from healthy and tumor tissue samples, in order to find genes differentially expressed in tumor tissue.
-                Using these genes found to be differentially expressed, I attempted to find synthetic lethal pairs that differed between males and females.
-                The video above provides a short overview of my research.
-              </p>
-            </div>
           </div>
         </section>
         </div>
