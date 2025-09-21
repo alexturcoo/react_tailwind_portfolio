@@ -41,7 +41,7 @@ export default function Home() {
               Aspiring Scientist.
             </h3>
             <p className=" font-sans text-md py-5 leading-8 text-white dark:text-gray-200 max-w-xl mx-auto md:text-xl">
-              Graduate research student passionate about
+              Graduate researcher passionate about
               As Ts Cs and Gs!
             </p>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
@@ -61,15 +61,16 @@ export default function Home() {
             <div className=" py-2 rounded-xl bg-gray-600">
             <h3 className=" font-sans text-3xl py-5 text-teal-600 ">About me</h3>
             <p className=" font-mono text-md p-3 leading-8 text-white">
-              Hello World, my name is Alexander Turco, thanks for checking out my
-              website! I wrote this website using react and tailwindcss as a means of
+              Thanks for checking out my website! I wrote this website using react and tailwindcss as a means of
               bettering my Javascript skills while also finding a cool way to share 
               some of the projects I have been involved in (because resumes are boring). I am
               currently a graduate student at the University of Toronto pursuing a Masters degree (MSc) in
-              Medical Biophysics. Prior to my undergrad, the thought of programming had never crossed my mind
-              as I believed my interests in biology would keep me far away from any code. I was introduced to bioinformatics
-              and have not looked back. I now have the best of both worlds
-              and am able to combine my love of biology with my love of programming to better understand the genome.  
+              Medical Biophysics. Since my first year of undergrad, I have been obsessed with studying the part
+              of the genome that most often gets filtered out of genomics studies. My research has focused on low-complexity regions,
+              tandem repeats, non-B DNA motifs, and transposable elements, and how we can better find and utilize these dark regions
+              of the genome to better understand the blueprint of all life. If i'm not programming, you can also find me playing
+              video games (currently Zelda Tears of the Kingdom), playing soccer, snowboarding, solving rubik's cubes, or travelling 
+              wherever I can go. Please feel free to connect with me about anything!
             </p>
             </div>
             <hr className="my-4 mx-auto w-48 h-1 bg-gray-100 rounded border-0 md:my-10 dark:bg-gray-700" />
@@ -80,9 +81,8 @@ export default function Home() {
             <h3 className=" font-sans text-3xl py-3 text-teal-600 ">Skills</h3>
             <p className=" font-mono text-md py-2 leading-8 text-white">
               As fascinated as I am about <span className="text-teal-500"> biology</span>, throughout my undergrad I began
-              to develop an obsession with <span className="text-teal-500">programming</span>. As I started to teach myself more, I
-              quickly recognized the potential programming has in so many different areas. Below
-              are some languages I have experience in. 
+              to develop an obsession with <span className="text-teal-500">programming</span> and creating projects. As I started to teach myself different languages, I
+              quickly recognized the potential programming has in so many different areas. Below are some of the popular languages I have experience in. 
             </p>
           </div>
           <div className="flex gap-10">
