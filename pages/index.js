@@ -70,7 +70,7 @@ export default function Home() {
               tandem repeats, non-B DNA motifs, and transposable elements, and how we can better find and utilize these dark regions
               of the genome to better understand the blueprint of all life. If i'm not programming, you can also find me playing
               video games (currently Zelda Tears of the Kingdom), playing soccer, snowboarding, solving rubik's cubes, or travelling 
-              wherever I can go. Please feel free to connect with me about anything! Test
+              wherever I can go. Please feel free to connect with me about anything! 
             </p>
             </div>
             <hr className="my-4 mx-auto w-48 h-1 bg-gray-100 rounded border-0 md:my-10 dark:bg-gray-700" />
@@ -81,8 +81,9 @@ export default function Home() {
             <h3 className=" font-sans text-3xl py-3 text-teal-600 ">Skills</h3>
             <p className=" font-mono text-md py-2 leading-8 text-white">
               As fascinated as I am about <span className="text-teal-500"> biology</span>, throughout my undergrad I began
-              to develop an obsession with <span className="text-teal-500">programming</span> and creating projects. As I started to teach myself different languages, I
-              quickly recognized the potential programming has in so many different areas. Below are some of the popular languages I have experience in. 
+              to develop an obsession with <span className="text-teal-500">programming</span>. As I started to teach myself more, I
+              quickly recognized the potential programming has in so many different areas. Below
+              are some languages I have experience in. 
             </p>
           </div>
           <div className="flex gap-10">
