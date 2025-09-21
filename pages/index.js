@@ -70,7 +70,7 @@ export default function Home() {
               tandem repeats, non-B DNA motifs, and transposable elements, and how we can better find and utilize these dark regions
               of the genome to better understand the blueprint of all life. If i'm not programming, you can also find me playing
               video games (currently Zelda Tears of the Kingdom), playing soccer, snowboarding, solving rubik's cubes, or travelling 
-              wherever I can go. Please feel free to connect with me about anything!
+              wherever I can go. Please feel free to connect with me about anything! Test
             </p>
             </div>
             <hr className="my-4 mx-auto w-48 h-1 bg-gray-100 rounded border-0 md:my-10 dark:bg-gray-700" />
