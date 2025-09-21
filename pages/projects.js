@@ -27,7 +27,7 @@ export default function Projects(){
           <div>
             <h3 className=" font-sans text-5xl py-1 text-teal-600 ">Projects</h3>
             <p className=" font-mono text-md py-2 leading-8 text-white ">
-              Many biological projects I have worked on have a computational
+              All biological projects I have worked on have a computational
               aspect to them. Feel free to take a look at the cool projects I
               have been fortunate enough to be involved with.
             </p>
