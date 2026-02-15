@@ -22,30 +22,31 @@ import pmcrc from "../public/pmcrc.png"
 
 export default function Projects(){
     return(
-        <div  className=" bg-gray-800">
-        <section className="p-10">
+        <div className="min-h-screen bg-black text-gray-300 font-mono">
+        <section className="max-w-5xl mx-auto px-6 py-20">
           <div>
-            <h3 className=" font-sans text-5xl py-1 text-teal-600 ">Projects</h3>
-            <p className=" font-mono text-md py-2 leading-8 text-white ">
+            <h1 className="text-4xl text-white mb-6 tracking-tight">
+              Projects
+            </h1>
+            <p className="text-gray-400 leading-relaxed mb-16 max-w-3xl">
               All biological projects I have worked on have a computational
               aspect to them. Feel free to take a look at the cool projects I
               have been fortunate enough to be involved with.
             </p>
           </div>
-          <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
+          <div className="space-y-24">
             <div className="basis-1 flex-1">
               <Link href="/poster.png">
               <Image
-                className="rounded-lg object-cover hover:scale-110 cursor-pointer"
+                className="object-cover border border-gray-800"
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
                 src={poster}
               />
               </Link>
-              <h4 className=" font-sans text-center text-xl p-3 text-white italic ">Investing Harmful Algal Blooms in Ontario</h4>
-              <hr className="my-4 mx-auto w-48 h-1 bg-gray-100 rounded border-0 md:my-10 dark:bg-gray-700" />
-              <p className=" font-sans bg-gradient-to-r from-cyan-500 text- to-teal-500 text-black p-2 border-none rounded">
+              <h4 className="text-2xl text-white mt-8 mb-4">Investigating Harmful Algal Blooms in Ontario</h4>
+              <p className="text-gray-400 leading-relaxed border-l border-gray-800 pl-6">
               As a research assistant at McMaster University, I spent the summer exploring harmful algal bloom sites 
               across Ontario. Under the supervision of Dr. Brian Golding and Dr. Herb Schellhorn, I conducted a 
               metagenomic analysis of bloom and non-bloom sites using samples provided by the Ministry of Environment 
@@ -60,16 +61,15 @@ export default function Projects(){
             <div className="basis-1 flex-1">
               <Link href="http://www.cellsatwar.com/demo/">
               <Image
-                className="rounded-lg object-cover scale-100 hover:scale-110 cursor-pointer"
+                className="object-cover border border-gray-800"
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
                 src={cells}
               />
               </Link>
-              <h4 className=" font-sans text-center text-xl p-3 text-white italic">Cells at War: An immersive biological game</h4>
-              <hr className="my-4 mx-auto w-48 h-1 bg-gray-100 rounded border-0 md:my-10 dark:bg-gray-700" />
-              <p className=" font-sans bg-gradient-to-r from-cyan-500 text- to-teal-500 text-black p-2 border-none rounded">
+              <h4 className="text-2xl text-white mt-8 mb-4">Cells at War: An immersive biological game</h4>
+              <p className="text-gray-400 leading-relaxed border-l border-gray-800 pl-6">
               I worked with a group of biology undergraduate students in collaboration with a supervising professor 
               towards the development of an innovative and immersive biological video game. The end goal of the 
               project was to pilot and implement the game in some first year science classrooms at McMaster 
@@ -85,37 +85,35 @@ export default function Projects(){
             <div className="basis-1 flex-1">
               <Link href="/finalthesis_apr19_alexturco_fixedcomments.pdf">
               <Image
-                className="rounded-lg object-fill scale-100 hover:scale-110 cursor-pointer"
+                className="object-contain border border-gray-800"
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
                 src={thesisb}
               />
               </Link>
-              <h4 className=" font-sans text-center text-xl p-3 text-white italic">Undergraduate Thesis: Evolution of LCRs</h4>
-              <hr className="my-4 mx-auto w-48 h-1 bg-gray-100 rounded border-0 md:my-10 dark:bg-gray-700" />
-              <p className=" font-sans bg-gradient-to-r from-cyan-500 text- to-teal-500 text-black p-2 border-none rounded-md">
+              <h4 className="text-2xl text-white mt-8 mb-4">Undergraduate Thesis: Evolution of LCRs</h4>
+              <p className="text-gray-400 leading-relaxed border-l border-gray-800 pl-6">
                 As a fourth year undergraduate thesis student, I worked in a bioinformatics lab under the supervision 
-                of Dr. Brian Golding. For my undergraduate thesis, I am explored how to estimate evolutionary parameters
+                of Dr. Brian Golding. For my undergraduate thesis, I explored how to estimate evolutionary parameters
                 such as mutation rates and indel rates using an analysis/approach called an approximate bayesian computation (ABC).
                 This analysis is rooted in bayesian statistics and it essentially translates into an algorithm. Using C++, I
                 developed my own version of this algorithm to estimate a small number of parameters that can describe
                 how Low Complexity Regions evolve. Check it out on github by pressing the image above.
               </p>
             </div>
-            <div className="basis-1, flex-1">
+            <div className="basis-1 flex-1">
               <Link href="/3mt_pmcrc_updated.mp4">
               <Image
-                className="rounded-lg object-fill scale-100 hover:scale-110 cursor-pointer"
+                className="object-contain border border-gray-800"
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
                 src={pmcrc}
               />
               </Link>
-              <h4 className=" font-sans text-center text-xl p-3 text-white italic">Investigating Sex Differences In Genetic Interactions across Human Cancers</h4>
-              <hr className="my-4 mx-auto w-48 h-1 bg-gray-100 rounded border-0 md:my-10 dark:bg-gray-700" />
-              <p className=" font-sans bg-gradient-to-r from-cyan-500 text- to-teal-500 text-black p-2 border-none rounded-md">
+              <h4 className="text-2xl text-white mt-8 mb-4">Investigating Sex Differences In Genetic Interactions across Human Cancers</h4>
+              <p className="text-gray-400 leading-relaxed border-l border-gray-800 pl-6">
                 As a research assistant in the Computational Cancer Genomics lab at Princess Margaret Centre, I worked under the supervision 
                 of Dr. Sushant Kumar. My research project focused on exploring sex differences in synthetic lethal interactions in 12 types of human cancers.
                 I analyzed RNA sequence data from healthy and tumor tissue samples, in order to find genes differentially expressed in tumor tissue.
@@ -128,4 +126,3 @@ export default function Projects(){
         </div>
     )
 }
-

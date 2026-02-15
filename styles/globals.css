@@ -2,23 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Reset + global layout */
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: #000000;
+  color: #d1d5db; /* gray-300 */
+  font-family: "IBM Plex Mono", monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
+/* Clean link behavior */
 a {
   color: inherit;
   text-decoration: none;
+  transition: color 0.2s ease;
 }
 
+a:hover {
+  color: #ffffff;
+}
+
+/* Box model normalization */
 * {
   box-sizing: border-box;
 }
-@font-face {
-  font-family: "burtons";
-  src: url("../public/Burtons.otf");
+
+/* Selection color — subtle terminal feel */
+::selection {
+  background: #1f2937; /* gray-800 */
+  color: #ffffff;
 }

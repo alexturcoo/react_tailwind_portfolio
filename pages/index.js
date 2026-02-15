@@ -32,17 +32,17 @@ import latex from "../public/latex.png"
 
 export default function Home() {
   return (
-    <div className=" flex text-center">
-      <main className=" bg-gray-800 px-10  md:px-20 lg:px-40">
-            <h2 className=" font-sans text-5xl py-10 text-teal-600 font-medium md:text-6xl">
+    <div className="min-h-screen bg-black text-gray-300 font-mono">
+      <main className="max-w-4xl mx-auto px-6 py-20">
+            <h1 className="text-4xl md:text-5xl text-white tracking-tight">
               Alexander Turco
-            </h2>
-            <h3 className=" font-sans text-2xl py-2 text-white md:text-3xl">
-              Aspiring Scientist.
-            </h3>
-            <p className=" font-sans text-md py-5 leading-8 text-white dark:text-gray-200 max-w-xl mx-auto md:text-xl">
-              Graduate researcher passionate about
-              As Ts Cs and Gs!
+            </h1>
+            <p className="text-lg text-gray-400 mt-4">
+              Computational Genomics & Machine Learning
+            </p>
+            <p className="mt-6 text-gray-400 leading-relaxed max-w-2xl">
+              Graduate researcher focused on repetitive DNA architecture, genome instability,
+              and large-scale sequencing analysis across haplotype-resolved assemblies.
             </p>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
               <a href="https://www.linkedin.com/in/alexander-turco-400369163/">
@@ -52,15 +52,17 @@ export default function Home() {
               <AiFillGithub />
               </a>
             </div>
-            <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-10 mb-10 md:h-96 md:w-96">
-              <Image src={headshot} layout="fill" objectFit="cover" />
+            <div className="mx-auto w-64 h-64 relative overflow-hidden mt-12 mb-16 border border-gray-700">
+              <Image src={headshot} layout="fill" objectFit="cover" className="grayscale" />
             </div>
             <hr className="my-4 mx-auto w-48 h-1 bg-gray-100 rounded border-0 md:my-10 dark:bg-gray-700" />
 
           <section>
-            <div className=" py-2 rounded-xl bg-gray-600">
-            <h3 className=" font-sans text-3xl py-5 text-teal-600 ">About me</h3>
-            <p className=" font-mono text-md p-3 leading-8 text-white">
+            <div className="border border-gray-800 p-8">
+            <h2 className="text-2xl text-white mb-6">
+              About me
+            </h2>
+            <p className="text-gray-400 leading-relaxed">
               Thanks for checking out my website! I wrote this website using react and tailwindcss as a means of
               bettering my Javascript skills while also finding a cool way to share 
               some of the projects I have been involved in (because resumes are boring). I am
@@ -78,7 +80,9 @@ export default function Home() {
 
         <section>
           <div>
-            <h3 className=" font-sans text-3xl py-3 text-teal-600 ">Skills</h3>
+            <h2 className="text-2xl text-white mb-6">
+              Skills
+            </h2>
             <p className=" font-mono text-md py-2 leading-8 text-white">
               As fascinated as I am about <span className="text-teal-500"> biology</span>, throughout my undergrad I began
               to develop an obsession with <span className="text-teal-500">programming</span>. As I started to teach myself more, I
@@ -86,28 +90,28 @@ export default function Home() {
               are some languages I have experience in. 
             </p>
           </div>
-          <div className="flex gap-10">
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 bg-white flex-1">
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
+            <div className="border border-gray-800 p-6 text-center">
               <Image src={python} width={100} height={100} />
               <h3 className=" font-mono text-lg font-medium pt-8 pb-2  ">
                 Python3
               </h3>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 bg-white flex-1">
+            <div className="border border-gray-800 p-6 text-center">
               <Image src={cpp} width={100} height={100} />
               <h3 className=" font-mono text-lg font-medium pt-8 pb-2 ">
                 C++
               </h3>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 bg-white flex-1">
+            <div className="border border-gray-800 p-6 text-center">
               <Image src={rstudio} width={100} height={100} />
               <h3 className=" font-mono text-lg font-medium pt-8 pb-2 ">RStudio</h3>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 bg-white flex-1">
+            <div className="border border-gray-800 p-6 text-center">
               <Image src={shell} width={100} height={100} />
               <h3 className=" font-mono text-lg font-medium pt-8 pb-2 ">Shell</h3>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 bg-white flex-1">
+            <div className="border border-gray-800 p-6 text-center">
               <Image src={latex} width={100} height={100} />
               <h3 className=" font-mono text-lg font-medium pt-8 pb-2 ">LaTeX</h3>
             </div>
