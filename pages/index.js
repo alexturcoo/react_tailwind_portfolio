@@ -48,7 +48,7 @@ export default function Home() {
               <a href="https://www.linkedin.com/in/alexander-turco-400369163/">
               <AiFillLinkedin />
               </a>
-              <a href="https://github.com/opticrom">
+              <a href="https://github.com/alexturcoo">
               <AiFillGithub />
               </a>
             </div>
@@ -108,7 +108,7 @@ export default function Home() {
               <h3 className=" font-mono text-lg font-medium pt-8 pb-2 ">RStudio</h3>
             </div>
             <div className="border border-gray-800 p-6 text-center">
-              <Image src={shell} width={100} height={100} />
+              <Image src={shell} width={100} height={100} className="invert" />
               <h3 className=" font-mono text-lg font-medium pt-8 pb-2 ">Shell</h3>
             </div>
             <div className="border border-gray-800 p-6 text-center">
