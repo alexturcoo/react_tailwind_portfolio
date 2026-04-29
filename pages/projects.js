@@ -1,128 +1,101 @@
-import React from "react";
-import styles from '../styles/About.module.css'
+import Head from "next/head";
 import Image from "next/image";
-import web1 from "../public/web1.png";
-import web2 from "../public/web2.png";
-import web3 from "../public/web3.png";
-import web4 from "../public/web4.png";
-import web5 from "../public/web5.png";
-import web6 from "../public/web6.png";
-import python from "../public/python.png"
-import cpp from "../public/cpp.png"
-import rstudio from "../public/rstudio.png"
-import DNA from "../public/DNA.png"
-import shell from "../public/shell.png"
-import latex from "../public/latex.png"
-import macwater from "../public/macwater.PNG"
-import poster from "../public/poster.png"
-import cells from "../public/cells.png"
-import thesisb from "../public/thesisb.png"
-import Link from "next/link"
-import pmcrc from "../public/pmcrc.png"
+import cells from "../public/cells.png";
+import pmcrc from "../public/pmcrc.png";
+import poster from "../public/poster.png";
+import thesisb from "../public/thesisb.png";
 
-export default function Projects(){
-    return(
-        <div className="min-h-screen bg-black text-gray-300 font-mono">
-        <section className="max-w-5xl mx-auto px-6 py-20">
-          <div>
-            <h1 className="text-4xl text-white mb-6 tracking-tight">
-              Projects
-            </h1>
-            <p className="text-gray-400 leading-relaxed mb-16 max-w-3xl">
-              All biological projects I have worked on have a computational
-              aspect to them. Feel free to take a look at the cool projects I
-              have been fortunate enough to be involved with.
-            </p>
-          </div>
-          <div className="space-y-24">
-            <div className="basis-1 flex-1">
-              <Link href="/poster.png">
-              <Image
-                className="object-cover border border-gray-800"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={poster}
-              />
-              </Link>
-              <h4 className="text-2xl text-white mt-8 mb-4">Investigating Harmful Algal Blooms in Ontario</h4>
-              <p className="text-gray-400 leading-relaxed border-l border-gray-800 pl-6">
-              As a research assistant at McMaster University, I spent the summer exploring harmful algal bloom sites 
-              across Ontario. Under the supervision of Dr. Brian Golding and Dr. Herb Schellhorn, I conducted a 
-              metagenomic analysis of bloom and non-bloom sites using samples provided by the Ministry of Environment 
-              and Climate change. I examined the bacterial composition of samples, trimmed, merged, and assembled 
-              genomes of organisms known to contribute to the toxicity of blooms, and identified the potential for 
-              multiple strains of the same species to be present at a single bloom site. I created a poster to summarize 
-              some of the findings from this research. This poster was displayed at the MacWater (McMaster water group) 
-              challenges in water monitoring conference held on October 14 in Hamilton. Professors, graduate students, and 
-              those who work in industry could view and inquire about the poster and the work being done.
-              </p>
-            </div>
-            <div className="basis-1 flex-1">
-              <Link href="http://www.cellsatwar.com/demo/">
-              <Image
-                className="object-cover border border-gray-800"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={cells}
-              />
-              </Link>
-              <h4 className="text-2xl text-white mt-8 mb-4">Cells at War: An immersive biological game</h4>
-              <p className="text-gray-400 leading-relaxed border-l border-gray-800 pl-6">
-              I worked with a group of biology undergraduate students in collaboration with a supervising professor 
-              towards the development of an innovative and immersive biological video game. The end goal of the 
-              project was to pilot and implement the game in some first year science classrooms at McMaster 
-              University. I had the opportunity to present a working build of the game to first year biology students and
-              conduct a survey to collect data regarding how the students felt about the game.
-              This was a cooperative project together with students and faculty from the Game Design 
-              program at George Brown College, as well as the Biology department at McMaster University. 
-              This project has been extended due to more funding and development is continuing, now with a larger team of collaborators across the globe. 
-              We hope to eventually create a hub of science-based games that students can play in place of reading a textbook
-              or examining static images.
-              </p>
-            </div>
-            <div className="basis-1 flex-1">
-              <Link href="/finalthesis_apr19_alexturco_fixedcomments.pdf">
-              <Image
-                className="object-contain border border-gray-800"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={thesisb}
-              />
-              </Link>
-              <h4 className="text-2xl text-white mt-8 mb-4">Undergraduate Thesis: Evolution of LCRs</h4>
-              <p className="text-gray-400 leading-relaxed border-l border-gray-800 pl-6">
-                As a fourth year undergraduate thesis student, I worked in a bioinformatics lab under the supervision 
-                of Dr. Brian Golding. For my undergraduate thesis, I explored how to estimate evolutionary parameters
-                such as mutation rates and indel rates using an analysis/approach called an approximate bayesian computation (ABC).
-                This analysis is rooted in bayesian statistics and it essentially translates into an algorithm. Using C++, I
-                developed my own version of this algorithm to estimate a small number of parameters that can describe
-                how Low Complexity Regions evolve. Check it out on github by pressing the image above.
-              </p>
-            </div>
-            <div className="basis-1 flex-1">
-              <Link href="/3mt_pmcrc_updated.mp4">
-              <Image
-                className="object-contain border border-gray-800"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={pmcrc}
-              />
-              </Link>
-              <h4 className="text-2xl text-white mt-8 mb-4">Investigating Sex Differences In Genetic Interactions across Human Cancers</h4>
-              <p className="text-gray-400 leading-relaxed border-l border-gray-800 pl-6">
-                As a research assistant in the Computational Cancer Genomics lab at Princess Margaret Centre, I worked under the supervision 
-                of Dr. Sushant Kumar. My research project focused on exploring sex differences in synthetic lethal interactions in 12 types of human cancers.
-                I analyzed RNA sequence data from healthy and tumor tissue samples, in order to find genes differentially expressed in tumor tissue.
-                Using these genes found to be differentially expressed, I attempted to find synthetic lethal pairs that differed between males and females.
-                The video above provides a short overview of my research.
-              </p>
-            </div>
-          </div>
-        </section>
+const projects = [
+  {
+    title: "Investigating Harmful Algal Blooms in Ontario",
+    href: "/poster.png",
+    image: poster,
+    imageFit: "contain",
+    description:
+      "As a research assistant at McMaster University, I spent the summer exploring harmful algal bloom sites across Ontario. Under the supervision of Dr. Brian Golding and Dr. Herb Schellhorn, I conducted a metagenomic analysis of bloom and non-bloom sites using samples provided by the Ministry of Environment and Climate change. I examined the bacterial composition of samples, trimmed, merged, and assembled genomes of organisms known to contribute to the toxicity of blooms, and identified the potential for multiple strains of the same species to be present at a single bloom site. I created a poster to summarize some of the findings from this research. This poster was displayed at the MacWater (McMaster water group) challenges in water monitoring conference held on October 14 in Hamilton. Professors, graduate students, and those who work in industry could view and inquire about the poster and the work being done.",
+  },
+  {
+    title: "Cells at War: An immersive biological game",
+    href: "http://www.cellsatwar.com/demo/",
+    image: cells,
+    imageFit: "cover",
+    description:
+      "I worked with a group of biology undergraduate students in collaboration with a supervising professor towards the development of an innovative and immersive biological video game. The end goal of the project was to pilot and implement the game in some first year science classrooms at McMaster University. I had the opportunity to present a working build of the game to first year biology students and conduct a survey to collect data regarding how the students felt about the game. This was a cooperative project together with students and faculty from the Game Design program at George Brown College, as well as the Biology department at McMaster University. This project has been extended due to more funding and development is continuing, now with a larger team of collaborators across the globe. We hope to eventually create a hub of science-based games that students can play in place of reading a textbook or examining static images.",
+  },
+  {
+    title: "Undergraduate Thesis: Evolution of LCRs",
+    href: "/finalthesis_apr19_alexturco_fixedcomments.pdf",
+    image: thesisb,
+    imageFit: "contain",
+    description:
+      "As a fourth year undergraduate thesis student, I worked in a bioinformatics lab under the supervision of Dr. Brian Golding. For my undergraduate thesis, I explored how to estimate evolutionary parameters such as mutation rates and indel rates using an analysis/approach called an approximate bayesian computation (ABC). This analysis is rooted in bayesian statistics and it essentially translates into an algorithm. Using C++, I developed my own version of this algorithm to estimate a small number of parameters that can describe how Low Complexity Regions evolve. Check it out on github by pressing the image above.",
+  },
+  {
+    title:
+      "Investigating Sex Differences In Genetic Interactions across Human Cancers",
+    href: "/3mt_pmcrc_updated.mp4",
+    image: pmcrc,
+    imageFit: "contain",
+    description:
+      "As a research assistant in the Computational Cancer Genomics lab at Princess Margaret Centre, I worked under the supervision of Dr. Sushant Kumar. My research project focused on exploring sex differences in synthetic lethal interactions in 12 types of human cancers. I analyzed RNA sequence data from healthy and tumor tissue samples, in order to find genes differentially expressed in tumor tissue. Using these genes found to be differentially expressed, I attempted to find synthetic lethal pairs that differed between males and females. The video above provides a short overview of my research.",
+  },
+];
+
+const ProjectCard = ({ project }) => {
+  const isExternal = project.href.startsWith("http");
+
+  return (
+    <article className="flex h-full flex-col overflow-hidden border border-gray-800 bg-gray-950/70 transition-colors hover:border-teal-400/50">
+      <a
+        href={project.href}
+        target={isExternal ? "_blank" : undefined}
+        rel="noreferrer"
+        className="group block border-b border-gray-800 bg-black/40"
+      >
+        <div className="relative aspect-[16/10]">
+          <Image
+            src={project.image}
+            alt={project.title}
+            layout="fill"
+            objectFit={project.imageFit}
+            className="transition-transform duration-300 group-hover:scale-[1.02]"
+          />
         </div>
-    )
+      </a>
+
+      <div className="flex flex-1 flex-col p-5 sm:p-6">
+        <h4 className="text-xl leading-tight text-white">{project.title}</h4>
+        <p className="mt-4 border-l border-gray-800 pl-4 text-sm leading-7 text-gray-400">
+          {project.description}
+        </p>
+      </div>
+    </article>
+  );
+};
+
+export default function Projects() {
+  return (
+    <div className="min-h-screen">
+      <Head>
+        <title>Projects | Alexander Turco</title>
+      </Head>
+
+      <section className="mx-auto max-w-6xl px-4 py-12 sm:px-6 sm:py-16 lg:py-20">
+        <header className="grid gap-6 border-b border-gray-800/80 pb-10 md:grid-cols-[220px_minmax(0,1fr)] md:gap-12">
+          <h1 className="text-4xl tracking-tight text-white">Projects</h1>
+          <p className="max-w-3xl leading-relaxed text-gray-400">
+            All biological projects I have worked on have a computational aspect
+            to them. Feel free to take a look at the cool projects I have been
+            fortunate enough to be involved with.
+          </p>
+        </header>
+
+        <div className="grid gap-5 pt-10 md:grid-cols-2">
+          {projects.map((project) => (
+            <ProjectCard key={project.title} project={project} />
+          ))}
+        </div>
+      </section>
+    </div>
+  );
 }

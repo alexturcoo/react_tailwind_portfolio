@@ -2,19 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Reset + global layout */
 html,
 body {
   padding: 0;
   margin: 0;
-  background-color: #000000;
-  color: #d1d5db; /* gray-300 */
-  font-family: "IBM Plex Mono", monospace;
+  background:
+    linear-gradient(rgba(20, 184, 166, 0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(20, 184, 166, 0.045) 1px, transparent 1px),
+    #05070a;
+  background-size: 48px 48px;
+  color: #d1d5db;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+    monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Clean link behavior */
+#__next {
+  min-height: 100vh;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -30,8 +37,7 @@ a:hover {
   box-sizing: border-box;
 }
 
-/* Selection color — subtle terminal feel */
 ::selection {
-  background: #1f2937; /* gray-800 */
+  background: #134e4a;
   color: #ffffff;
 }

@@ -4,7 +4,7 @@ import { Bottombar } from '../components/bottombar'
 
 function MyApp({ Component, pageProps }) {
   return (
-    <div className="bg-black text-gray-300 min-h-screen font-mono flex flex-col">
+    <div className="min-h-screen text-gray-300 font-mono flex flex-col">
       <Navbar />
       <main className="flex-1">
         <Component {...pageProps} />
