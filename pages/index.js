@@ -2,7 +2,6 @@ import Head from "next/head";
 import Image from "next/image";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import cpp from "../public/cpp.png";
-import headshot from "../public/headshot2.JPG";
 import latex from "../public/latex.png";
 import python from "../public/python.png";
 import rstudio from "../public/rstudio.png";
@@ -92,7 +91,7 @@ export default function Home() {
             <div className="absolute -inset-3 border border-teal-500/20" />
             <div className="relative aspect-square overflow-hidden border border-gray-700/80 bg-gray-950">
               <Image
-                src={headshot}
+                src="/headshot2.JPG"
                 alt="Alexander Turco"
                 layout="fill"
                 objectFit="cover"

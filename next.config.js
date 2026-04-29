@@ -1,7 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: "export",
   reactStrictMode: true,
-  swcMinify: true,
+  turbopack: {
+    root: __dirname,
+  },
   images: {
     unoptimized: true,
   },
