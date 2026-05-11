@@ -9,7 +9,7 @@ export default function Projects() {
         <title>Projects | Alexander Turco</title>
       </Head>
 
-      <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
+      <section className="mx-auto max-w-[1660px] px-4 py-12 sm:px-6 sm:py-16 lg:px-10 lg:py-20">
         <header className="grid gap-6 border-b border-cyan-950/80 pb-10 md:grid-cols-[240px_minmax(0,1fr)] md:gap-12">
           <div>
             <p className="mb-4 w-fit border border-amber-300/35 bg-amber-300/10 px-3 py-2 text-xs uppercase text-amber-100">

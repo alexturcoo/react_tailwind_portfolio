@@ -44,7 +44,7 @@ const focusTags = [
   "haplotype assemblies",
 ];
 
-const signalRows = ["ATCG", "TATA", "GCGC", "NNNN"];
+const signalRows = ["ATCG", "TATA", "GCGC"];
 
 const SocialLink = ({ href, label, icon: Icon }) => (
   <a
@@ -100,7 +100,7 @@ export default function Home() {
       <main className="relative z-10 overflow-hidden">
         <section
           id="home"
-          className="relative mx-auto grid min-h-[calc(100vh-92px)] max-w-7xl items-center gap-10 overflow-hidden border-b border-cyan-950/80 px-4 py-10 sm:px-6 md:grid-cols-[minmax(0,1.05fr)_minmax(280px,0.7fr)] lg:gap-16 lg:px-8 lg:pr-44 xl:pr-52"
+          className="relative mx-auto grid min-h-[calc(100vh-92px)] max-w-[1660px] items-center gap-10 overflow-hidden border-b border-cyan-950/80 px-4 py-10 sm:px-6 md:grid-cols-[minmax(0,1.08fr)_minmax(280px,0.72fr)] lg:gap-16 lg:px-10 lg:pr-48 xl:pr-56"
         >
           <div className="absolute inset-x-0 top-10 -z-10 h-px bg-gradient-to-r from-transparent via-amber-300/50 to-transparent animate-signal-line" />
           <div className="absolute left-0 top-24 -z-10 hidden h-[62%] w-px bg-gradient-to-b from-cyan-300/50 via-indigo-300/35 to-transparent md:block" />
@@ -134,7 +134,7 @@ export default function Home() {
                 rel="noreferrer"
                 className="group inline-flex items-center gap-2 border border-amber-300/55 bg-amber-300/10 px-4 py-3 text-sm text-amber-50 shadow-[0_18px_45px_rgba(245,158,11,0.1)] transition duration-300 hover:-translate-y-1 hover:border-amber-200"
               >
-                Read Nerdvana
+                Check out my blog
                 <AiOutlineArrowRight className="transition-transform duration-300 group-hover:translate-x-1" />
               </a>
               <div className="flex gap-3">
@@ -144,23 +144,18 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="mt-8 grid max-w-2xl grid-cols-2 gap-3 sm:grid-cols-4">
-              {focusTags.map((tag, index) => (
-                <span
-                  key={tag}
-                  className={`border px-3 py-3 text-xs text-gray-200 shadow-[0_12px_35px_rgba(3,12,28,0.18)] ${
-                    index % 2 === 0
-                      ? "border-cyan-300/25 bg-cyan-300/[0.06]"
-                      : "border-indigo-300/25 bg-indigo-300/[0.06]"
-                  }`}
-                >
+            <div className="mt-8 flex max-w-3xl flex-wrap items-center gap-x-3 gap-y-2 text-xs text-gray-300 sm:text-sm">
+              <span className="text-cyan-100">Research focus</span>
+              {focusTags.map((tag) => (
+                <span key={tag} className="flex items-center gap-3">
+                  <span className="h-px w-5 bg-cyan-300/35" />
                   {tag}
                 </span>
               ))}
             </div>
           </div>
 
-          <div className="relative mx-auto grid w-full max-w-sm gap-4 md:max-w-md">
+          <div className="relative mx-auto w-full max-w-sm md:max-w-md">
             <div className="absolute -left-7 top-10 hidden h-36 w-36 border border-amber-300/20 bg-amber-300/[0.04] animate-soft-flicker sm:block" />
             <div className="absolute -right-5 -top-5 h-28 w-px bg-gradient-to-b from-amber-300/80 to-transparent" />
             <div className="absolute -bottom-5 left-6 h-px w-40 bg-gradient-to-r from-indigo-300/70 to-transparent" />
@@ -175,22 +170,12 @@ export default function Home() {
                 priority
               />
             </div>
-            <div className="grid grid-cols-2 gap-3">
-              <div className="border border-cyan-300/20 bg-cyan-300/[0.06] p-4">
-                <p className="text-xs text-cyan-100">genome signals</p>
-                <p className="mt-3 text-2xl text-white">ATCG</p>
-              </div>
-              <div className="border border-amber-300/20 bg-amber-300/[0.07] p-4">
-                <p className="text-xs text-amber-100">dark regions</p>
-                <p className="mt-3 text-2xl text-white">LCRs</p>
-              </div>
-            </div>
           </div>
         </section>
 
         <section
           id="about"
-          className="mx-auto grid max-w-7xl gap-8 border-b border-cyan-950/80 px-4 py-16 sm:px-6 lg:grid-cols-[240px_minmax(0,1fr)] lg:gap-12 lg:px-8 lg:py-20 lg:pr-44 xl:pr-52"
+          className="mx-auto grid max-w-[1660px] gap-8 border-b border-cyan-950/80 px-4 py-16 sm:px-6 lg:grid-cols-[240px_minmax(0,1fr)] lg:gap-12 lg:px-10 lg:py-20 lg:pr-48 xl:pr-56"
         >
           <h2 className="text-2xl text-white">About me</h2>
           <div className="relative overflow-hidden border border-cyan-950/70 bg-[#081725]/85 p-5 shadow-[0_24px_80px_rgba(3,12,28,0.38)] backdrop-blur sm:p-8">
@@ -219,7 +204,7 @@ export default function Home() {
 
         <section
           id="skills"
-          className="mx-auto grid max-w-7xl gap-8 border-b border-cyan-950/80 px-4 py-16 sm:px-6 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.35fr)] lg:gap-12 lg:px-8 lg:py-20 lg:pr-44 xl:pr-52"
+          className="mx-auto grid max-w-[1660px] gap-8 border-b border-cyan-950/80 px-4 py-16 sm:px-6 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.35fr)] lg:gap-12 lg:px-10 lg:py-20 lg:pr-48 xl:pr-56"
         >
           <div>
             <h2 className="text-2xl text-white">Skills</h2>
@@ -243,7 +228,7 @@ export default function Home() {
 
         <section
           id="projects"
-          className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20 lg:pr-44 xl:pr-52"
+          className="mx-auto max-w-[1660px] px-4 py-16 sm:px-6 lg:px-10 lg:py-20 lg:pr-48 xl:pr-56"
         >
           <header className="grid gap-6 border-b border-cyan-950/80 pb-10 md:grid-cols-[240px_minmax(0,1fr)] md:gap-12">
             <div>
