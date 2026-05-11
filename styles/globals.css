@@ -7,15 +7,71 @@ body {
   padding: 0;
   margin: 0;
   background:
-    linear-gradient(rgba(20, 184, 166, 0.055) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(20, 184, 166, 0.045) 1px, transparent 1px),
-    #05070a;
-  background-size: 48px 48px;
+    linear-gradient(120deg, rgba(20, 184, 166, 0.1), transparent 28%),
+    linear-gradient(240deg, rgba(99, 102, 241, 0.12), transparent 36%),
+    repeating-linear-gradient(
+      0deg,
+      rgba(148, 163, 184, 0.035) 0 1px,
+      transparent 1px 52px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(20, 184, 166, 0.035) 0 1px,
+      transparent 1px 52px
+    ),
+    #09110f;
+  background-attachment: fixed;
+  background-size: auto, auto, 52px 52px, 52px 52px, auto;
   color: #d1d5db;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
     monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5.5rem;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  pointer-events: none;
+  background:
+    linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(245, 158, 11, 0.055) 48%,
+      rgba(20, 184, 166, 0.08) 50%,
+      transparent 53%
+    ),
+    repeating-linear-gradient(
+      115deg,
+      transparent 0 32px,
+      rgba(148, 163, 184, 0.035) 32px 33px,
+      transparent 33px 66px
+    );
+  background-size: 180% 100%, 180px 180px;
+  opacity: 0.85;
+  animation: signal-drift 26s linear infinite;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: auto 0 0;
+  z-index: -1;
+  height: 42vh;
+  pointer-events: none;
+  background: linear-gradient(
+    180deg,
+    transparent,
+    rgba(20, 184, 166, 0.045) 45%,
+    rgba(245, 158, 11, 0.05)
+  );
 }
 
 #__next {
@@ -40,4 +96,70 @@ a:hover {
 ::selection {
   background: #134e4a;
   color: #ffffff;
+}
+
+.animate-signal-line {
+  animation: signal-line 5.5s ease-in-out infinite;
+}
+
+.animate-float-slow {
+  animation: float-slow 8s ease-in-out infinite;
+}
+
+.animate-dna-breathe {
+  animation: dna-breathe 6s ease-in-out infinite;
+}
+
+@keyframes signal-drift {
+  from {
+    background-position: 0% 0%, 0 0;
+  }
+  to {
+    background-position: 180% 0%, 180px 180px;
+  }
+}
+
+@keyframes signal-line {
+  0%,
+  100% {
+    opacity: 0.4;
+    transform: translateX(-8%);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(8%);
+  }
+}
+
+@keyframes float-slow {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes dna-breathe {
+  0%,
+  100% {
+    filter: drop-shadow(0 0 10px rgba(20, 184, 166, 0.18));
+  }
+  50% {
+    filter: drop-shadow(0 0 18px rgba(99, 102, 241, 0.24));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  body::before,
+  .animate-signal-line,
+  .animate-float-slow,
+  .animate-dna-breathe {
+    animation: none;
+  }
 }
