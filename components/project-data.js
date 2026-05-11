@@ -6,6 +6,7 @@ import thesisb from "../public/thesisb.png";
 export const projects = [
   {
     title: "Investigating Harmful Algal Blooms in Ontario",
+    date: "Aug 2021",
     href: "/poster.png",
     image: poster,
     imageFit: "contain",
@@ -14,6 +15,7 @@ export const projects = [
   },
   {
     title: "Cells at War: An immersive biological game",
+    date: "Dec 2022",
     href: "http://www.cellsatwar.com/demo/",
     image: cells,
     imageFit: "cover",
@@ -22,6 +24,7 @@ export const projects = [
   },
   {
     title: "Undergraduate Thesis: Evolution of LCRs",
+    date: "Apr 2023",
     href: "/finalthesis_apr19_alexturco_fixedcomments.pdf",
     image: thesisb,
     imageFit: "contain",
@@ -31,6 +34,7 @@ export const projects = [
   {
     title:
       "Investigating Sex Differences In Genetic Interactions across Human Cancers",
+    date: "Aug 2023",
     href: "/3mt_pmcrc_updated.mp4",
     image: pmcrc,
     imageFit: "contain",

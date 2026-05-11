@@ -7,21 +7,22 @@ body {
   padding: 0;
   margin: 0;
   background:
-    linear-gradient(120deg, rgba(20, 184, 166, 0.1), transparent 28%),
-    linear-gradient(240deg, rgba(99, 102, 241, 0.12), transparent 36%),
+    linear-gradient(120deg, rgba(34, 211, 238, 0.13), transparent 30%),
+    linear-gradient(240deg, rgba(99, 102, 241, 0.16), transparent 38%),
+    linear-gradient(180deg, rgba(4, 7, 16, 0.2), rgba(4, 19, 32, 0.72)),
     repeating-linear-gradient(
       0deg,
-      rgba(148, 163, 184, 0.035) 0 1px,
-      transparent 1px 52px
+      rgba(125, 211, 252, 0.045) 0 1px,
+      transparent 1px 44px
     ),
     repeating-linear-gradient(
       90deg,
-      rgba(20, 184, 166, 0.035) 0 1px,
-      transparent 1px 52px
+      rgba(45, 212, 191, 0.04) 0 1px,
+      transparent 1px 44px
     ),
-    #09110f;
+    #06111f;
   background-attachment: fixed;
-  background-size: auto, auto, 52px 52px, 52px 52px, auto;
+  background-size: auto, auto, auto, 44px 44px, 44px 44px, auto;
   color: #d1d5db;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
     monospace;
@@ -44,14 +45,14 @@ body::before {
     linear-gradient(
       90deg,
       transparent 0%,
-      rgba(245, 158, 11, 0.055) 48%,
-      rgba(20, 184, 166, 0.08) 50%,
+      rgba(245, 158, 11, 0.075) 47%,
+      rgba(34, 211, 238, 0.1) 50%,
       transparent 53%
     ),
     repeating-linear-gradient(
       115deg,
       transparent 0 32px,
-      rgba(148, 163, 184, 0.035) 32px 33px,
+      rgba(125, 211, 252, 0.045) 32px 33px,
       transparent 33px 66px
     );
   background-size: 180% 100%, 180px 180px;
@@ -69,8 +70,8 @@ body::after {
   background: linear-gradient(
     180deg,
     transparent,
-    rgba(20, 184, 166, 0.045) 45%,
-    rgba(245, 158, 11, 0.05)
+    rgba(34, 211, 238, 0.05) 45%,
+    rgba(99, 102, 241, 0.08)
   );
 }
 
@@ -108,6 +109,14 @@ a:hover {
 
 .animate-dna-breathe {
   animation: dna-breathe 6s ease-in-out infinite;
+}
+
+.animate-sequence-drift {
+  animation: sequence-drift 18s linear infinite;
+}
+
+.animate-soft-flicker {
+  animation: soft-flicker 4.8s ease-in-out infinite;
 }
 
 @keyframes signal-drift {
@@ -151,6 +160,25 @@ a:hover {
   }
 }
 
+@keyframes sequence-drift {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 220px 0;
+  }
+}
+
+@keyframes soft-flicker {
+  0%,
+  100% {
+    opacity: 0.42;
+  }
+  50% {
+    opacity: 0.9;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -159,7 +187,9 @@ a:hover {
   body::before,
   .animate-signal-line,
   .animate-float-slow,
-  .animate-dna-breathe {
+  .animate-dna-breathe,
+  .animate-sequence-drift,
+  .animate-soft-flicker {
     animation: none;
   }
 }

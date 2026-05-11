@@ -38,10 +38,10 @@ export default function Contact() {
       <section className="relative mx-auto grid min-h-[calc(100vh-150px)] max-w-5xl items-start gap-8 overflow-hidden px-4 py-12 sm:px-6 sm:py-16 md:grid-cols-[220px_minmax(0,1fr)] md:items-center md:py-24">
         <div className="absolute inset-x-0 top-12 -z-10 h-px bg-gradient-to-r from-transparent via-teal-300/40 to-transparent animate-signal-line" />
         <div>
-          <p className="mb-4 w-fit border border-teal-800/70 bg-teal-950/25 px-3 py-2 text-xs uppercase tracking-[0.18em] text-teal-200">
+          <p className="mb-4 w-fit border border-teal-800/70 bg-teal-950/25 px-3 py-2 text-xs uppercase text-teal-200">
             connect
           </p>
-          <h1 className="text-4xl tracking-tight text-white">Contact</h1>
+          <h1 className="text-4xl text-white">Contact</h1>
         </div>
 
         <div className="grid gap-4">
