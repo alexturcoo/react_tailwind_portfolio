@@ -1,19 +1,11 @@
 import Link from "next/link";
 
-export const Bottombar = () => {
-  return (
-    <footer className="border-t border-teal-950/80 bg-[#08120f]/90">
-      <div className="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-6 text-sm text-gray-500 sm:px-6 md:flex-row md:items-center md:justify-between">
-        <Link href="/">
-          <a className="w-fit transition-colors hover:text-teal-200">
-            alexander_turco
-          </a>
-        </Link>
-
-        <span className="text-gray-400">
-          © {new Date().getFullYear()} · computational genomics
-        </span>
-      </div>
-    </footer>
-  );
-};
+export const Bottombar = () => (
+  <footer className="site-footer">
+    <div className="page-container footer-content">
+      <Link href="/" className="wordmark">Alexander Turco<span className="accent">.</span></Link>
+      <span>© {new Date().getFullYear()} · Computational genomics</span>
+      <a href="mailto:alexander.turco@mail.utoronto.ca" className="text-link">Let’s connect <span aria-hidden="true">↗</span></a>
+    </div>
+  </footer>
+);
