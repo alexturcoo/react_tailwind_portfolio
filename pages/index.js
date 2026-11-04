@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { AiFillGithub, AiFillLinkedin, AiOutlineArrowRight } from "react-icons/ai";
 import { ProjectCollection } from "../components/project-collection";
+import phdOverview from "../public/optimized/phd-overview.webp";
 
 const skills = ["Python", "C++", "R", "Shell", "LaTeX"];
 
@@ -45,6 +46,31 @@ export default function Home() {
             <p>My research explores low-complexity regions, tandem repeats, non-B DNA motifs, and transposable elements — finding better ways to understand these overlooked regions and what they reveal about the blueprint of life.</p>
             <p>Outside the lab, you’ll find me playing video games or soccer, snowboarding, solving Rubik’s cubes, and travelling. I built this site with React and Tailwind CSS to share what I’ve been working on. Feel free to connect!</p>
           </div>
+          <figure className="research-figure">
+            <a
+              href="/research/phd-overview.png"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="research-figure-image"
+              aria-label="Open the PhD research overview at full size (opens in a new tab)"
+            >
+              <Image
+                src={phdOverview}
+                alt="Three PhD research aims: non-B DNA structures and genome instability; tandem repeat expansions in cancer; and low-complexity regions in protein function."
+                sizes="(max-width: 760px) calc(100vw - 40px), (max-width: 1000px) calc(100vw - 64px), (max-width: 1216px) calc(100vw - 96px), 1120px"
+                className="research-figure-artwork"
+              />
+            </a>
+            <figcaption className="research-figure-caption">
+              <div>
+                <h3>My PhD, at a glance.</h3>
+                <p>Three connected aims: understanding DNA architecture, repeat expansions in cancer, and the role of low-complexity regions in protein function.</p>
+              </div>
+              <a href="/research/phd-overview.png" target="_blank" rel="noopener noreferrer" className="text-link">
+                View full-size figure <span aria-hidden="true">↗</span><span className="sr-only"> (opens in a new tab)</span>
+              </a>
+            </figcaption>
+          </figure>
         </section>
 
         <section id="skills" className="skills-section">

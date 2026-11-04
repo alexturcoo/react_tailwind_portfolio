@@ -45,10 +45,18 @@ h1, h2, h3 { font-weight: 500; letter-spacing: -0.045em; }
 .portrait-caption { display: flex; justify-content: space-between; gap: 12px; margin-top: 16px; color: var(--muted); font-size: 11px; flex-wrap: wrap; }
 .section-space { padding-block: 85px; }
 h2, .page-title { font-size: clamp(30px, 3.5vw, 42px); line-height: 1.2; }
-.about-section { display: grid; grid-template-columns: 1fr 1.2fr; gap: 100px; }
+.about-section { display: grid; grid-template-columns: 1fr 1.2fr; gap: 44px 100px; }
 .about-section h2, .skills-section h2 { margin-top: 16px; }
 .about-copy { font-size: 15px; line-height: 1.9; color: var(--muted); }
 .about-copy p + p { margin-top: 20px; }
+.research-figure { grid-column: 1 / -1; min-width: 0; margin: 0; }
+.research-figure-image { display: block; overflow: hidden; border-radius: 16px; background: #fff; cursor: zoom-in; }
+.research-figure-image:focus-visible { outline-offset: 5px; }
+.research-figure-artwork { display: block; width: 100%; height: auto; }
+.research-figure-caption { display: flex; align-items: flex-start; justify-content: space-between; gap: 24px; padding-top: 24px; }
+.research-figure-caption h3 { font-size: 20px; letter-spacing: -0.025em; line-height: 1.4; }
+.research-figure-caption p { max-width: 670px; margin-top: 8px; color: var(--muted); font-size: 14px; line-height: 1.8; }
+.research-figure-caption > a { flex-shrink: 0; color: var(--accent); }
 .skills-section { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 70px; padding: 42px; background: var(--surface); border-radius: 16px; margin-block: 30px; }
 .section-description { max-width: 410px; color: var(--muted); font-size: 15px; line-height: 1.8; }
 .skills-section .section-description { margin-top: 16px; }
@@ -138,6 +146,9 @@ button { font: inherit; color: inherit; cursor: pointer; }
   .portrait { aspect-ratio: 1 / 1; }
   .section-space { padding-block: 50px; }
   .about-section, .skills-section { grid-template-columns: 1fr; gap: 26px; }
+  .research-figure { margin-top: 6px; }
+  .research-figure-image { border-radius: 12px; }
+  .research-figure-caption { flex-direction: column; gap: 8px; padding-top: 20px; }
   .skills-section { padding: 28px; margin-block: 16px; }
   .skill-list { gap: 8px; }
   .skill-list li { padding: 11px 16px; font-size: 14px; }
