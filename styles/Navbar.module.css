@@ -1,0 +1,124 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  background: rgba(21, 25, 24, 0.95);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  min-height: 90px;
+}
+
+.wordmark {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: 44px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  color: var(--muted, #a7b0aa);
+  font-size: 13px;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+
+.link:hover,
+.link[aria-current] {
+  color: var(--accent, #b7d5a5);
+  background: rgba(183, 213, 165, 0.065);
+}
+
+.link[aria-current] {
+  font-weight: 600;
+}
+
+.link:focus-visible,
+.toggle:focus-visible {
+  outline: 2px solid var(--accent, #b7d5a5);
+  outline-offset: 3px;
+}
+
+.external {
+  font-size: 12px;
+}
+
+.cv {
+  color: var(--text, #f2f3ed);
+}
+
+.fileType {
+  font-size: 9px;
+  letter-spacing: 0.04em;
+  color: var(--muted, #a7b0aa);
+}
+
+.toggle {
+  display: none;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 0;
+  border-radius: 8px;
+  background: var(--surface, #1d2220);
+  color: var(--text, #f2f3ed);
+  padding: 10px 12px;
+  font: inherit;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.toggle svg {
+  stroke: currentColor;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+}
+
+@media (max-width: 1000px) {
+  .nav { gap: 16px; }
+  .links { gap: 0; }
+  .link { padding-inline: 10px; }
+}
+
+@media (max-width: 760px) {
+  .nav {
+    flex-wrap: wrap;
+    gap: 0 16px;
+    min-height: 72px;
+    padding-block: 14px;
+  }
+
+  .toggle[data-enhanced="true"] { display: inline-flex; }
+
+  .links {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 100%;
+    gap: 4px 8px;
+    padding-top: 16px;
+    padding-bottom: 6px;
+  }
+
+  .links[data-enhanced="true"][data-open="false"] { display: none; }
+
+  .link { justify-content: flex-start; padding: 12px; font-size: 14px; }
+}

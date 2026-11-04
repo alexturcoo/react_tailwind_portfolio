@@ -1,17 +1,23 @@
-import { Navbar } from '../components/navbar'
-import '../styles/globals.css'
-import { Bottombar } from '../components/bottombar'
+import Head from "next/head";
+import { Navbar } from "../components/navbar";
+import { Bottombar } from "../components/bottombar";
+import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="site-shell">
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#151918" />
+      </Head>
+      <a className="skip-link" href="#main-content">Skip to content</a>
       <Navbar />
-      <main className="flex-1">
+      <main id="main-content" className="site-main" tabIndex={-1}>
         <Component {...pageProps} />
       </main>
       <Bottombar />
     </div>
-  )
+  );
 }
 
-export default MyApp
+export default MyApp;

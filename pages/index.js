@@ -1,8 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import { AiFillGithub, AiFillLinkedin, AiOutlineArrowRight } from "react-icons/ai";
-import { ProjectCard } from "../components/project-card";
-import { projects } from "../components/project-data";
+import { ProjectCollection } from "../components/project-collection";
 
 const skills = ["Python", "C++", "R", "Shell", "LaTeX"];
 
@@ -32,7 +32,7 @@ export default function Home() {
           </div>
           <div className="portrait-wrap">
             <div className="portrait">
-              <Image src="/headshot2.JPG" alt="Alexander Turco" fill sizes="(max-width: 760px) 85vw, 380px" priority className="portrait-image" />
+              <Image src="/optimized/portrait.webp" alt="Alexander Turco" fill sizes="(max-width: 390px) calc(100vw - 40px), (max-width: 760px) 350px, 380px" priority className="portrait-image" />
             </div>
             <p className="portrait-caption">Medical Biophysics <span>University of Toronto</span></p>
           </div>
@@ -54,7 +54,16 @@ export default function Home() {
 
         <section id="projects" className="section-space projects-section">
           <header className="section-header"><div><p className="eyebrow">Selected work</p><h2>Projects & research</h2></div><p className="section-description">Projects spanning computational biology, biomedical AI, and interpretable machine learning.</p></header>
-          <div className="project-grid">{projects.map((project) => <ProjectCard key={project.title} project={project} />)}</div>
+          <ProjectCollection />
+        </section>
+
+        <section className="connect-section" aria-labelledby="connect-title">
+          <div>
+            <p className="eyebrow">Keep the conversation going</p>
+            <h2 id="connect-title">Good questions lead to good work.</h2>
+            <p className="section-description">Have a research idea, a question about a project, or something interesting to share?</p>
+          </div>
+          <Link href="/contact" className="button button-primary">Let’s connect <AiOutlineArrowRight aria-hidden="true" /></Link>
         </section>
       </div>
     </>
